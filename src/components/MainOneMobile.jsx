@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import foto from "../app/assets/hero2.jpg";
 import { Button } from "@mui/material";
