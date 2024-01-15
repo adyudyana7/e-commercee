@@ -2,7 +2,19 @@ import MainOne from "@/components/MainOne";
 import MainOneMobile from "@/components/MainOneMobile";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import Photo from "../app/assets/cover1.png";
+import Photo2 from "../app/assets/cover2.png";
+import Photo3 from "../app/assets/cover3.png";
+import Photo4 from "../app/assets/cover4.png";
+import Photo5 from "../app/assets/cover5.png";
+import Photo6 from "../app/assets/cover6.png";
+import Photo7 from "../app/assets/cover7.png";
+import Photo8 from "../app/assets/cover8.png";
 import Posts from "./(components)/Posts";
+import Footer from "@/components/Footer";
+import Part from "@/components/Part/Part";
+import EditorsPick from "@/components/EditorsPick/EditorsPick";
+import VitaClassic from "@/components/VitaClassic/VitaClassic";
+// import FooterMobile from "@/components/FooterMobile";
 const products = [
   {
     id: 1,
@@ -18,7 +30,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo2,
   },
   ,
   {
@@ -27,7 +39,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo3,
   },
   ,
   {
@@ -36,7 +48,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo4,
   },
   ,
   {
@@ -45,7 +57,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo5,
   },
   ,
   {
@@ -54,7 +66,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo6,
   },
   ,
   {
@@ -63,7 +75,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo7,
   },
   {
     id: 8,
@@ -71,7 +83,7 @@ const products = [
     category: "English Department",
     price: 16.48,
     discountPrice: 6.48,
-    photo: Photo,
+    photo: Photo8,
   },
 ];
 export default function Home() {
@@ -79,7 +91,8 @@ export default function Home() {
     <main>
       <MainOne />
       <MainOneMobile />
-      <section className="tw-px-9 md:tw-px-36 tw-flex tw-flex-col md:tw-gap-y-8">
+      <EditorsPick />
+      <section className="tw-px-9 md:tw-px-36 tw-flex tw-flex-col t md:tw-pt-[100px]  md:tw-gap-y-8 tw-justify-center">
         <div className="tw-text-center">
           <p>Featured Products</p>
           <h2>BESTSELLER PRODUCTS</h2>
@@ -92,7 +105,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <VitaClassic />
+      <Part />
       <Posts />
+
+      <Footer />
     </main>
   );
 }
