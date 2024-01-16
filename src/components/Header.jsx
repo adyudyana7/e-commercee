@@ -1,5 +1,5 @@
-const { default: HeaderDesktop } = require("./HeaderDesktop");
-const { default: HeaderMobile } = require("./HeaderMobile");
+import HeaderDesktop from "./HeaderDesktop";
+import HeaderMobile from "./HeaderMobile";
 
 export const NAVIGATIONS = [
   {

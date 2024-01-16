@@ -1,10 +1,14 @@
-const { Avatar } = require("@mui/material");
 import axios from "axios";
+import { Avatar } from "@mui/material";
+import { notFound } from "next/navigation";
+
 const TeamPage = async () => {
   const response = await axios.get("https://dummyjson.com/users");
   const { users } = response.data;
-  console.log("users: ", users);
 
+  if (!response) {
+    return notFound();
+  }
   return (
     <div
       className="tw-px-7 tw-tw-flex tw-flex-col tw-items-center tw-gap-y-12
